@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>
+     STASI | etusivu  
+	</title>
+<meta name="robots" content="index,follow" />
+<meta name="keywords" content="etusivu" />	
+<link rel="stylesheet" href="/css/style.css">
+<script src="/js/kello.js" type="text/javascript"></script>
+<script src="/js/navbar.js" type="text/javascript"></script>
+<script src="/js/mute.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div id="container" class="cont_ainer">
+<nav>
+<div id="circlemain" class="circle_main" >	
+		<div class="arc1 line1">
+           <div class="arc1 line2">
+            <div class="arc1 line3">
+
+            </div>
+          </div>
+	</div>	
+	<div class="reactor">
+	<div class="navcontainer" onclick="navTog(this); barWidth();">
+<div class="hamContainer">
+ <a> <div class="hbar1"></div>
+  <div class="hbar2"></div>
+  <div class="hbar3"></div>
+  <div class="hbar4"></div>
+  <div class="hbar5"></div></a>
+</div>
+ <span class="reacttext"></span>
+ 	</div>	
+	</div>
+	<span  id="barleft" class="bar_left ">
+		<ul class="nav_top" id="navtop">
+		<li><a href="index.html">Etusivu</a></li>
+		<li><a href="tapahtumat.html">Tapahtumat</a></li>
+		</ul>	
+	</span>
+	<span id="barright" class="bar_right">	
+	<ul class="nav_bottom" id="navbottom">
+	<li><a href="saannot.html">Säännöt</a></li>
+	<li><a href="hallitus.html">Hallitus</a></li>
+	</ul>
+	</span>
+</div>
+</nav>
+</div>
+	
+  <div class="center">
+    <p class="bigtext animatetop mass">HUOLTO</p>
+    <hr class="border" style="margin:auto;width:50%">
+    <h1 id="kello" style="font-size:20px"></h1>
+  </div>
+    <div class="loader">
+  <div class="part">
+    <div class="part">
+      <div class="part">
+        <div class="part">
+          <div class="part"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	<video playsinline autoplay muted loop id="bgvid">
+        <source src="/tiedostot/us.webm" type="video/webm">
+        <source src="/tiedostot/us.mp4" type="video/mp4">
+    </video>
+	<audio id="musiikki" autoplay loop>
+        <source src="/tiedostot/musiikki.mp3" type="audio/mpeg">
+        <source src="/tiedostot/musiikki.ogg" type="audio/ogg"> Your browser does not support the audio element.
+    </audio>
+	<script>
+  var audio = document.getElementById("musiikki");
+  audio.volume = 0.3;
+</script>
+<button id="toggle" class="toggle" onclick="mute()">MUTE</button>
+</body>
+</html>
